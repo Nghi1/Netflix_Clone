@@ -4,6 +4,15 @@
     box-sizing: border-box;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
+body{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 header{
     position: relative;
     width: 100%;
@@ -48,6 +57,12 @@ header::before{
    margin-right: 10px;
    margin-left: 10px;
 }
+@media screen and (max-width: 500px) {
+    .sign-in, .lang{
+        display: block;
+        margin-top: 10px;
+    }
+}
 .fa-caret-down{
     margin-left: 1px;
 }
@@ -63,6 +78,11 @@ header::before{
     color: #fff;
     font-size: 30px;
     gap: 25px;
+}
+@media screen and (max-width: 600px) {
+    .content-box{
+        padding: 0;
+    }
 }
 /*search*/
 form{
